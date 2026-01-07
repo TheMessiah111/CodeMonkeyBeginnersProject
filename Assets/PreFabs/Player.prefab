@@ -138,8 +138,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 1
-  coinList: []
-  coinTowerList: []
+  coinList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  coinTowerList:
+  - {fileID: 0}
+  - {fileID: 0}
+  coinText: {fileID: 7745702322137055379}
 --- !u!1 &6927449843133508682
 GameObject:
   m_ObjectHideFlags: 0

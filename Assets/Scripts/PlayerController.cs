@@ -10,13 +10,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int moveSpeed = 1;
     [SerializeField] private List<Coin> coinList;
     [SerializeField] private List<Transform> coinTowerList;
-    private float minDistance = 1f;
+    [SerializeField] private float minDistance = 0.8f;
     private Vector3 playerTransform;
     [SerializeField] private TextMeshProUGUI coinText;
     private int noOfCoin;
     void Start()
     {
         noOfCoin = 0;
+        
     }
 
     // Update is called once per frame
@@ -24,17 +25,43 @@ public class PlayerController : MonoBehaviour
     {
        MovePlayer();
        DestroyCoinOnSpace();
-
+       Towers();
     }
 
     private void Towers()
     {
-        
+        playerTransform = transform.position;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            for (int i = 0; i < coinTowerList.Count; i++)
+            {
+                if(coinTowerList[i] != null && (playerTransform - coinTowerList[i].position).magnitude < minDistance)
+                {
+                if(i == 0)
+                    {
+                        AddCoin();
+                        AddCoin();
+                        AddCoin();
+                    }
+                else if(i == 1)
+                    {
+                        AddCoin();
+                        AddCoin();
+                        AddCoin();
+                        AddCoin();
+                        AddCoin();
+                    }
+                }
+            }
+        }
     }
 
     private void AddCoin()
     {
         noOfCoin += 1;
+
+        // shows coin on update
+        coinText.text = noOfCoin.ToString();
     }
 
     private void DestroyCoinOnSpace()
