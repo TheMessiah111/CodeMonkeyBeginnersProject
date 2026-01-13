@@ -1303,6 +1303,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 897486008334894184, guid: 6c6922fcb09fe8845a984ee7144d716a, type: 3}
+      propertyPath: minDistance
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 897486008334894184, guid: 6c6922fcb09fe8845a984ee7144d716a, type: 3}
       propertyPath: 'coinList.Array.data[0]'
       value: 
       objectReference: {fileID: 1498478085}
@@ -1350,6 +1354,10 @@ PrefabInstance:
       propertyPath: 'coinTowerList.Array.data[1]'
       value: 
       objectReference: {fileID: 1446164488}
+    - target: {fileID: 2787605549743756147, guid: 6c6922fcb09fe8845a984ee7144d716a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3616083614484924078, guid: 6c6922fcb09fe8845a984ee7144d716a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1398,6 +1406,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 4501477111126166848, guid: 6c6922fcb09fe8845a984ee7144d716a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6184839764651417741, guid: 6c6922fcb09fe8845a984ee7144d716a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7745702322137055379, guid: 6c6922fcb09fe8845a984ee7144d716a, type: 3}
       propertyPath: m_text
       value: 0

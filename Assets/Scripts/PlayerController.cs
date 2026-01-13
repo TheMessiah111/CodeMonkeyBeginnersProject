@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
     {
         noOfCoin += 1;
 
+
+
         // shows coin on update
         coinText.text = noOfCoin.ToString();
     }
@@ -85,7 +87,10 @@ public class PlayerController : MonoBehaviour
         }
         
     }
-
+private void JustCheckingParams( int numbers, params string[] names)
+    {
+        
+    }
     private void MovePlayer()
     {
          if (Input.GetKeyDown(KeyCode.UpArrow))
